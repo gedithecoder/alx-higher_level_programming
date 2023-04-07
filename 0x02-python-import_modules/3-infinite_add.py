@@ -10,5 +10,3 @@ if __name__ == "__main__":
         add = add + num
 
     print(add)
-
-
