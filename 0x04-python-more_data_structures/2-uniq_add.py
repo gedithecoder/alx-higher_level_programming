@@ -9,4 +9,3 @@ def uniq_add(my_list=[]):
     for j in new_list:
         k += j
     return k
-
