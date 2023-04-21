@@ -2,7 +2,7 @@
 
 def update_dictionary(a_dictionary, key, value):
     for i, j in a_dictionary.items():
-        elif i == key:
+        if i == key:
             a_dictionary[i] = value
         else:
             a_dictionary[key] = value
