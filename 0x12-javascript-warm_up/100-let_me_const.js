@@ -1,4 +1,3 @@
 #!/usr/bin/node
-myVar = function () {
-  return 333;
+myVar = 333;
 }
