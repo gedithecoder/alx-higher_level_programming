@@ -1,12 +1,7 @@
 #!/usr/bin/python3
-"""Module check class ans subclass
-"""
+"This is the module for is_same_class"
 
 
-def is_kind_of_class(obj, a_class):
-    """
-    returns True if the object is an instance of, or if the object
-    is an instance
-    of a class that inherited from, the specified class ; otherwise False
-    """
-    return isinstance(obj, a_class)
+def is_same_class(obj, a_class):
+    "Detecs if obj is in class"
+    return type(obj) == a_class
