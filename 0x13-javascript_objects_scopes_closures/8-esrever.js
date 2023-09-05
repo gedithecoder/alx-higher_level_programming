@@ -1,4 +1,8 @@
 #!/usr/bin/node
-exports.nbOccurences = function (list, searchElement) {
-  return list.reduce((count, current) => current === searchElement ? count + 1 : count, 0);
+exports.esrever = function (list) {
+  const myList = [];
+  for (let x = list.length - 1; x >= 0; x--) {
+    myList.push(list[x]);
+  }
+  return myList;
 };
