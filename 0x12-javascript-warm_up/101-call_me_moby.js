@@ -1,6 +1,6 @@
 #!/usr/bin/node
-// Function that increments and calls another function
-
-exports.addMeMaybe = function (number, theFunction) {
-  theFunction(number + 1);
+exports.callMeMoby = function (var1, callback) {
+  for (let i = 0; i < var1; i++) {
+    callback(var1);
+  }
 };

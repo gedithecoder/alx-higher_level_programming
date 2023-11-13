@@ -1,23 +1,20 @@
 #!/usr/bin/node
-// Searches the second biggest integer in the list of arguments
 
-const args = process.argv;
+function second (myArray) {
+  if (myArray.length === 2 || myArray.length === 3) { return (0); }
 
-if (isNaN(args[2])) {
-  console.log('0');
-} else if (args.length === 3) {
-  console.log('0');
-} else {
-  let first = parseInt(args[2], 10);
-  let second = parseInt(args[3], 10);
-  for (let i = 2; i < args.length; i++) {
-    if (parseInt(args[i], 10) > first) {
-      second = first;
-      first = parseInt(args[i], 10);
-    }
-    if (parseInt(args[i], 10) > second && parseInt(args[i], 10) < first) {
-      second = parseInt(args[i], 10);
+  let max = myArray[2];
+  let secondMax = myArray[3];
+
+  for (let i = 2; i < myArray.length; i++) {
+    if (myArray[i] > max) {
+      secondMax = max;
+      max = myArray[i];
+    } else if (myArray[i] > secondMax && myArray[i] < max) {
+      secondMax = myArray[i];
     }
   }
-  console.log(second);
+  return (secondMax);
 }
+
+console.log(second(process.argv));

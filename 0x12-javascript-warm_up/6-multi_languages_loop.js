@@ -1,7 +1,6 @@
 #!/usr/bin/node
-// Uses an array to loop through and print strings
+let myArray = ['C is fun', 'Python is cool', 'JavaScript is amazing'];
 
-const langs = ['C is fun', 'Python is cool', 'Javascript is amazing'];
-for (let i = 0; i < langs.length; i++) {
-  console.log(langs[i]);
+for (let i = 0, len = myArray.length; i < len; i++) {
+  console.log(myArray[i]);
 }
